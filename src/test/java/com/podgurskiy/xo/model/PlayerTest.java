@@ -16,7 +16,7 @@ public class PlayerTest {
 
     @Test
     public void getName() throws Exception {
-        assertEquals("Max", player.getName());
+        assertEquals("Vadim", player.getName());
     }
 
     @Test
