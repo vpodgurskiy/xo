@@ -8,10 +8,12 @@ import static org.junit.Assert.*;
 public class PlayerTest {
 
     public Player player;
+    final String name = "Vadim";
+    final Figure figure = Figure.X;
 
     @Before
     public void setUp() throws Exception {
-        player = new Player("Vadim", Figure.X);
+        player = new Player(name, figure);
     }
 
     @Test
@@ -21,5 +23,6 @@ public class PlayerTest {
 
     @Test
     public void getFigure() {
+        assertEquals(figure, player.getFigure());
     }
 }
